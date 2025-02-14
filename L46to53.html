@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .task1 {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            margin: 10px auto;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            color: #ff8a05;
+            border-radius: 50%;
+            box-shadow: -5px 0 0 0 blue, 5px 0 0 0 #ff8a05;
+            font-weight: bold;
+        }
+
+        .parent1 {
+            width: 600px;
+            height: 300px;
+            display: flex;
+            margin: 10px auto;
+            background-color: #ccc;
+            padding: 10px;
+            flex-flow: wrap row;
+            justify-content: space-between;
+            align-content: space-between;
+        }
+
+        .parent1 div {
+            background-color: red;
+            color: white;
+            width: calc(95%/3);
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .parent2 {
+            width: 600px;
+            height: 300px;
+            margin: 10px auto;
+            background-color: #ccc;
+            padding: 10px;
+            display: flex;
+            flex-flow: wrap row;
+            justify-content: space-between;
+
+        }
+
+        .parent2 div {
+            background-color: rgba(16, 16, 67, 0.489);
+            color: white;
+            width: calc(95%/3);
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .parent2 .one {
+            order: 6;
+            height: 40px;
+            align-self: flex-end;
+        }
+
+        .parent2 .two {
+            order: 5;
+        }
+
+        .parent2 .three {
+            order: 2;
+            height: 40px;
+        }
+
+        .parent2 .four {
+            order: 3;
+        }
+
+        .parent2 .five {
+            order: 4;
+        }
+
+        .parent2 .six {
+            order: 1;
+        }
+
+        .parent3 {
+            width: 600px;
+            height: 300px;
+            margin: 10px auto;
+            background-color: #ccc;
+            padding: 10px;
+            display: flex;
+            flex-flow: wrap column;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .parent3 div {
+            background-color: rgba(21, 110, 75, 0.873);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: calc(95%/3);
+            width: 5%;
+
+        }
+
+        .parent3 .two2 {
+            align-self: flex-start;
+            width: 50%;
+
+        }
+
+        .parent4 {
+            width: 600px;
+            height: 300px;
+            margin: 10px auto;
+            background-color: #ccc;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .parent4 div {
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: calc(80% / 4);
+            height: 50%;
+
+        }
+
+        .parent4 .one {
+            background-color: orange;
+            order: 2;
+
+        }
+
+        .parent4 .two {
+            background-color: greenyellow;
+            order: 3;
+            align-self: flex-end;
+        }
+
+        .parent4 .three {
+            background-color: brown;
+            order: 4;
+        }
+
+        .parent4 .four {
+            background-color: purple;
+            order: 1;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="task1">Elzero</div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <div class="parent1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <div class="parent2">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+        <div class="five">5</div>
+        <div class="six">6</div>
+    </div>
+
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+
+    <div class="parent3">
+        <div class="one1">1</div>
+        <div class="two2">2</div>
+        <div class="three3">3</div>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+
+
+    <div class="parent4">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            background-color: #eee;
+            width: 400px;
+            height: 200px;
+            padding: 20px;
+            margin: 50px auto;
+            text-align: center;
+            transition-delay: 0s;
+            transition-duration: 0.5s;
+            transition-timing-function: ease;
+        }
+
+        .parent:hover {
+            margin-top: 30px;
+        }
+
+        .child {
+            background-color: #ccc;
+            padding: 20px;
+            transition-delay: 0.5s;
+            transition-duration: 1s;
+            transition-timing-function: linear;
+
+
+        }
+
+        .parent:hover .child {
+            margin-top: 30px;
+        }
+
+        .two {
+            width: 400px;
+            margin: 10px auto;
+            background-color: #eee !important;
+            color: black !important;
+            font-size: 20px !important;
+            border: none !important;
+            position: relative;
+            text-indent: -20000px;
+        }
+
+        .two::after {
+            content: "Elzero";
+            position: absolute;
+            text-indent: 0;
+            left: 190px;
+
+        }
+        /*
+        :root {
+            --mainColor: #009688;
+            --mainPadding: 10px;
+          }
+          */
+          .three div {
+            margin: 10px auto;
+            padding: var(--mainPadding , 20px);
+            color: var(--mainColor , red);        
+            border: 3px solid var(--mainColor , black) ;
+            width: 400px;    
+            
+          }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        will go up in hover after half second
+        <div class="child">
+            will go down in hover after half second
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <div class="two" style="background-color: red;
+  color: white;
+  padding: 20px;
+  border: 1px solid blue;
+  font-size: 80px;">
+        Hello Div
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+   <div class="three">
+    <div>Element</div>
+    <div>Element</div>
+    <div>Element</div>
+   </div>
+
+</body>
+
+</html>
